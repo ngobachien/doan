@@ -1,0 +1,257 @@
+.productgrid-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: #fff;
+}
+.productgrid-filter {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.productgrid-sort select {
+  margin-left: 8px;
+  padding: 4px;
+  border-radius: 4px;
+}
+.productgrid-count {
+  font-size: 1.1rem;
+}
+.productgrid-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.productgrid-card {
+  background: #18113c;
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productgrid-img-wrap {
+  width: 100%;
+  height: 220px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.productgrid-img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+.productgrid-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #c9a4f7;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.productgrid-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.productgrid-rating {
+  color: #00e676;
+  margin-bottom: 6px;
+}
+.productgrid-rating .star {
+  color: #ccc;
+}
+.productgrid-rating .star.filled {
+  color: #00e676;
+}
+.productgrid-reviews {
+  color: #fff;
+  margin-left: 4px;
+  font-size: 0.95rem;
+}
+.productgrid-prices {
+  margin-bottom: 12px;
+}
+.productgrid-oldprice {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 8px;
+}
+.productgrid-price {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.productgrid-btn {
+  background: #7ff6ff;
+  color: #18113c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0px;
+  width: 90%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: auto;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.productgrid-btn:hover {
+  background: #b1eaff;
+}
+.productgrid-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.productgrid-page-btn {
+  background: #fff;
+  color: #18113c;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.productgrid-page-btn.active,
+.productgrid-page-btn:hover {
+  background: #7ff6ff;
+  color: #18113c;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .productgrid-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .productgrid-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productgrid-toolbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .productgrid-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .productgrid-card {
+    padding: 12px;
+  }
+
+  .productgrid-img-wrap {
+    height: 180px;
+  }
+
+  .productgrid-name {
+    font-size: 1rem;
+  }
+
+  .productgrid-btn {
+    padding: 8px 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .productgrid-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .productgrid-img-wrap {
+    height: 160px;
+  }
+
+  .productgrid-name {
+    font-size: 0.95rem;
+  }
+
+  .productgrid-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .productgrid-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .productgrid-card {
+    padding: 10px;
+  }
+
+  .productgrid-img-wrap {
+    height: 140px;
+  }
+
+  .productgrid-name {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .productgrid-price {
+    font-size: 1rem;
+  }
+
+  .productgrid-btn {
+    padding: 6px 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .productgrid-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .productgrid-card {
+    padding: 8px;
+  }
+
+  .productgrid-img-wrap {
+    height: 120px;
+  }
+
+  .productgrid-name {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .productgrid-price {
+    font-size: 0.9rem;
+  }
+
+  .productgrid-btn {
+    padding: 5px 0;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,332 @@
+.chie-banner {
+  width: 100vw;
+  min-height: 110px;
+  background: linear-gradient(120deg, #b18be8 0%, #b1eaff 60%, #7ff6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chie-banner-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #18113c;
+  font-family: 'Montserrat', Arial, sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.chie-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0 24px 0;
+  color: #fff;
+  width: 100%;
+  padding: 0 32px;
+  background-color: #1a1f3a;
+}
+
+.chie-filter {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.chie-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.chie-sort-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.chie-sort-select {
+  margin-left: 6px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background-color: #1a1f3a;
+  color: #b0b7c9;
+}
+
+.chie-sort-select option {
+  background-color: #1a1f3a;
+  color: #b0b7c9;
+}
+
+.chie-count {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.chie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin: 0 32px 32px 32px;
+  background-color: #1a1f3a;
+}
+
+.chie-card {
+  background: #18113c;
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chie-img-wrap {
+  width: 100%;
+  height: 220px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.chie-img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.chie-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #c9a4f7;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.chie-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.chie-prices {
+  margin-bottom: 12px;
+}
+
+.chie-oldprice {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 8px;
+}
+
+.chie-price {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.chie-btn {
+  background: #7ff6ff;
+  color: #18113c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 90%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: auto;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chie-btn:hover {
+  background: #b1eaff;
+}
+
+.chie-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.chie-page-btn {
+  background: #fff;
+  color: #18113c;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.chie-page-btn.active,
+.chie-page-btn:hover {
+  background: #7ff6ff;
+  color: #18113c;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .chie-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 24px 24px 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .chie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 20px 20px 20px;
+  }
+
+  .chie-toolbar {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chie-banner-title {
+    font-size: 2.5rem;
+  }
+
+  .chie-toolbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    padding: 0 16px;
+  }
+
+  .chie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0 16px 16px 16px;
+  }
+
+  .chie-card {
+    padding: 12px;
+  }
+
+  .chie-img-wrap {
+    height: 180px;
+  }
+
+  .chie-name {
+    font-size: 1rem;
+  }
+
+  .chie-btn {
+    padding: 8px 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .chie-banner-title {
+    font-size: 2rem;
+  }
+
+  .chie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 0 12px 12px 12px;
+  }
+
+  .chie-img-wrap {
+    height: 160px;
+  }
+
+  .chie-name {
+    font-size: 0.95rem;
+  }
+
+  .chie-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chie-banner-title {
+    font-size: 1.8rem;
+  }
+
+  .chie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 10px 10px 10px;
+  }
+
+  .chie-card {
+    padding: 10px;
+  }
+
+  .chie-img-wrap {
+    height: 140px;
+  }
+
+  .chie-name {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .chie-price {
+    font-size: 1rem;
+  }
+
+  .chie-btn {
+    padding: 6px 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .chie-banner-title {
+    font-size: 1.5rem;
+  }
+
+  .chie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 0 8px 8px 8px;
+  }
+
+  .chie-card {
+    padding: 8px;
+  }
+
+  .chie-img-wrap {
+    height: 120px;
+  }
+
+  .chie-name {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .chie-price {
+    font-size: 0.9rem;
+  }
+
+  .chie-btn {
+    padding: 5px 0;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,61 @@
+.new-friend-discount {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1s ease-out;
+}
+
+.discount-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.discount-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Removed unused styles */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .new-friend-discount {
+    padding: 0;
+  }
+
+  .discount-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .promotion-image {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}

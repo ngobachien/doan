@@ -1,0 +1,436 @@
+.top-picks-section {
+  background: linear-gradient(180deg, #181046 0%, #2a1b66 100%);
+  padding: 3rem 1.5rem 1rem 1.5rem; /* Giảm padding dưới để tiêu đề không bị chồng lấn */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.top-picks-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 1rem 0; /* Thêm padding để tiêu đề nổi bật */
+}
+
+.top-picks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto 3rem auto;
+}
+
+.top-pick-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(35, 25, 66, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Chiều cao cố định để tất cả cards đều nhau */
+  min-width: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0); /* Hardware acceleration */
+  position: relative;
+}
+
+.top-pick-card:hover {
+  transform: translateY(-6px) translateZ(0) scale(1.02);
+  box-shadow: 0 15px 40px rgba(35, 25, 66, 0.3);
+}
+
+.top-pick-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  border-radius: 20px;
+}
+
+.top-pick-card:hover::before {
+  opacity: 1;
+}
+
+.top-pick-img-wrap {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #f8f1ff 0%, #f0e8ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px; /* Chiều cao cố định cho phần hình ảnh */
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.top-pick-img-wrap img {
+  width: 100%;
+  height: 220px; /* Chiều cao cố định cho tất cả hình ảnh */
+  object-fit: contain;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.top-pick-card:hover .top-pick-img-wrap img {
+  transform: scale(1.03) translateZ(0);
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.2));
+}
+
+.discount-badge {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background: linear-gradient(45deg, #ff4757, #ff6b6b);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  z-index: 3;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.top-pick-info {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  flex: 1; /* Cho phép phần info mở rộng để lấp đầy không gian còn lại */
+  justify-content: space-between; /* Phân bố đều các phần tử */
+  border-radius: 0 0 20px 20px;
+}
+
+.top-pick-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #181046;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  line-height: 1.3;
+  height: 2.6rem; /* Chiều cao cố định để tên sản phẩm đồng đều */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.top-pick-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  margin-bottom: 0.8rem;
+  height: 1.8rem; /* Chiều cao cố định cho rating */
+}
+
+.star {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.star.filled {
+  color: #ffd700;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.5);
+}
+
+.rating-count {
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+}
+
+.top-pick-prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1.2rem;
+  height: 3.5rem; /* Chiều cao cố định cho phần giá */
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  order: 2;
+  line-height: 1.2;
+}
+
+.new-price {
+  color: #7c4dff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  order: 1;
+  text-shadow: 0 2px 4px rgba(124, 77, 255, 0.2);
+  line-height: 1.2;
+}
+
+.top-pick-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1) translateZ(0);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.top-pick-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-pick-btn:hover::before {
+  left: 100%;
+}
+
+.top-pick-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) translateZ(0) scale(1.02);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.top-pick-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 1400px) {
+  .top-picks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .top-pick-card {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-picks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .top-pick-card {
+    height: 480px;
+  }
+
+  .top-pick-img-wrap {
+    height: 240px;
+  }
+
+  .top-pick-img-wrap img {
+    height: 180px;
+  }
+
+  .top-pick-name {
+    height: 2.4rem;
+    font-size: 0.95rem;
+  }
+
+  .top-pick-prices {
+    height: 3.2rem;
+  }
+
+  .new-price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-picks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .top-picks-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .top-pick-card {
+    height: 400px;
+  }
+
+  .top-pick-img-wrap {
+    height: 180px;
+    padding: 0.8rem;
+  }
+
+  .top-pick-img-wrap img {
+    height: 140px;
+  }
+
+  .top-pick-name {
+    font-size: 0.9rem;
+    height: 2.2rem;
+    line-height: 1.1;
+  }
+
+  .top-pick-prices {
+    height: 2.8rem;
+  }
+
+  .new-price {
+    font-size: 1rem;
+  }
+
+  .old-price {
+    font-size: 0.8rem;
+  }
+
+  .top-pick-btn {
+    font-size: 0.85rem;
+    padding: 0.7rem 0;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .top-picks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    padding: 0 0.25rem;
+  }
+
+  .top-picks-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .top-pick-card {
+    height: 350px;
+  }
+
+  .top-pick-img-wrap {
+    height: 150px;
+    padding: 0.6rem;
+  }
+
+  .top-pick-img-wrap img {
+    height: 120px;
+  }
+
+  .top-pick-name {
+    font-size: 0.8rem;
+    height: 2rem;
+    line-height: 1;
+  }
+
+  .top-pick-prices {
+    height: 2.5rem;
+  }
+
+  .new-price {
+    font-size: 0.9rem;
+  }
+
+  .old-price {
+    font-size: 0.75rem;
+  }
+
+  .top-pick-btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 0;
+  }
+}
+
+/* Ultra small screens */
+@media (max-width: 320px) {
+  .top-picks-grid {
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .top-picks-title {
+    font-size: 1.6rem;
+  }
+
+  .top-pick-card {
+    height: 320px;
+  }
+
+  .top-pick-img-wrap {
+    height: 130px;
+    padding: 0.5rem;
+  }
+
+  .top-pick-img-wrap img {
+    height: 100px;
+  }
+
+  .top-pick-name {
+    font-size: 0.75rem;
+    height: 1.8rem;
+  }
+
+  .top-pick-prices {
+    height: 2.2rem;
+  }
+
+  .new-price {
+    font-size: 0.85rem;
+  }
+
+  .old-price {
+    font-size: 0.7rem;
+  }
+
+  .top-pick-btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+  }
+}

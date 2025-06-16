@@ -1,0 +1,43 @@
+.trademark-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.trademark-page h1 {
+  color: #1a1f3a;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.trademark-page p {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.trademark-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trademark-page li {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #1a1f3a;
+  transition: transform 0.2s;
+}
+
+.trademark-page li:hover {
+  transform: translateY(-2px);
+}

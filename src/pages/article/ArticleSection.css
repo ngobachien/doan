@@ -1,0 +1,54 @@
+.article-section-banner {
+  position: relative;
+  width: 100vw;
+  min-height: 340px;
+  height: 48vw;
+  max-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.article-section-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1600&q=80') center center/cover no-repeat;
+  filter: grayscale(1) brightness(0.4);
+  z-index: 1;
+}
+.article-section-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 90vw;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+@media (max-width: 900px) {
+  .article-section-title {
+    font-size: 28px;
+  }
+  .article-section-banner {
+    height: 32vw;
+    min-height: 180px;
+    max-height: 220px;
+  }
+}
+@media (max-width: 600px) {
+  .article-section-title {
+    font-size: 16px;
+    padding: 0 8px;
+  }
+  .article-section-banner {
+    height: 90vw;
+    min-height: 100px;
+    max-height: 140px;
+  }
+} 

@@ -1,0 +1,20 @@
+.test-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.test-page > * {
+  margin: 0;
+}
+
+/* Smooth transitions between sections */
+.test-page section {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .test-page {
+    padding: 0;
+  }
+}

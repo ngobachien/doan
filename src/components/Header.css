@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  background: #1a1f3a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+  will-change: box-shadow, background-color;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth scroll behavior for header links */
+.header a {
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  will-change: color, opacity;
+}
+
+.header a:hover {
+  transition: color 0.15s ease-out;
+}

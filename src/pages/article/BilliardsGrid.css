@@ -1,0 +1,109 @@
+.billiardsgrid-section {
+  width: 100vw;
+  padding: 48px 0 0 0;
+  background: #120c3c;
+}
+.billiardsgrid-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 60px;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.billiardsgrid-list {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.billiardsgrid-card {
+  background: #181046;
+  border-radius: 32px;
+  box-shadow: 0 6px 32px 0 rgba(30, 20, 80, 0.10);
+  overflow: hidden;
+  width: 370px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+.billiardsgrid-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 32px 32px 0 0;
+  display: block;
+}
+.billiardsgrid-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 28px 0 0 28px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.2;
+}
+.billiardsgrid-btn {
+  background: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  border: none;
+  margin: 28px 0 28px 28px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.18s;
+}
+.billiardsgrid-btn:hover {
+  color: #7ff6ff;
+}
+.billiardsgrid-arrow {
+  font-size: 1.2rem;
+  margin-left: 2px;
+}
+@media (max-width: 1200px) {
+  .billiardsgrid-list {
+    gap: 24px;
+  }
+  .billiardsgrid-card {
+    width: 320px;
+  }
+  .billiardsgrid-img {
+    height: 220px;
+  }
+}
+@media (max-width: 900px) {
+  .billiardsgrid-title {
+    font-size: 2rem;
+    margin-left: 18px;
+  }
+  .billiardsgrid-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .billiardsgrid-card {
+    width: 98vw;
+    max-width: 100vw;
+    border-radius: 18px;
+  }
+  .billiardsgrid-img {
+    border-radius: 18px 18px 0 0;
+    height: 160px;
+  }
+  .billiardsgrid-card-title {
+    font-size: 1.1rem;
+    margin: 14px 0 0 14px;
+  }
+  .billiardsgrid-btn {
+    font-size: 0.95rem;
+    margin: 14px 0 14px 14px;
+  }
+} 

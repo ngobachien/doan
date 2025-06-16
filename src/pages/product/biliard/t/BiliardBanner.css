@@ -1,0 +1,27 @@
+.biliard-banner {
+  width: 100%;
+  min-height: 90px;
+  background: linear-gradient(90deg, #b993f4 0%, #a1c4fd 40%, #a1fefd 100%);
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #18123a;
+  border-bottom: none;
+}
+.biliard-banner h1 {
+  color: #18123a;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: 80px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (max-width: 700px) {
+  .biliard-banner h1 {
+    font-size: 2rem;
+    margin-left: 18px;
+  }
+  .biliard-banner {
+    min-height: 60px;
+  }
+} 

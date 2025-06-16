@@ -1,0 +1,113 @@
+.articlegenuine-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0 0 0;
+}
+
+.articlegenuine-img-wrap {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 600px;
+  height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 32px 0 rgba(30, 20, 80, 0.10);
+}
+
+.articlegenuine-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.articlegenuine-content {
+  flex: 1 1 0;
+  background: linear-gradient(120deg, #a084e8 0%, #b1eaff 60%, #7ff6ff 100%);
+  border-radius: 32px;
+  padding: 48px 48px 48px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  max-width: 650px;
+  box-shadow: 0 6px 32px 0 rgba(30, 20, 80, 0.10);
+}
+
+.articlegenuine-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #18113c;
+  margin-bottom: 48px;
+  line-height: 1.2;
+}
+
+.articlegenuine-btn {
+  width: 160px;
+  padding: 16px 0;
+  border-radius: 12px;
+  border: none;
+  background: #7ff6ff;
+  color: #18113c;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(30, 20, 80, 0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.articlegenuine-btn:hover {
+  background: #b1eaff;
+  color: #18113c;
+}
+
+@media (max-width: 1100px) {
+  .articlegenuine-section {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0 0 0;
+  }
+  .articlegenuine-content {
+    max-width: 100%;
+    padding: 36px 24px;
+    min-height: 220px;
+  }
+  .articlegenuine-img-wrap {
+    max-width: 100%;
+    height: 260px;
+  }
+  .articlegenuine-title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .articlegenuine-section {
+    padding: 16px 0 0 0;
+  }
+  .articlegenuine-content {
+    padding: 20px 10px;
+    min-height: 120px;
+    border-radius: 18px;
+  }
+  .articlegenuine-img-wrap {
+    height: 160px;
+    border-radius: 12px;
+  }
+  .articlegenuine-title {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  .articlegenuine-btn {
+    width: 120px;
+    padding: 10px 0;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+} 

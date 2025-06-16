@@ -1,0 +1,31 @@
+.brand-detail-bg {
+  background: linear-gradient(120deg, #b18be8 0%, #b1eaff 60%, #7ff6ff 100%);
+  padding: 0.5rem 1rem; /* tăng padding trái phải */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1400px; /* rộng hơn */
+  margin: 0 auto;
+}
+
+.brand-detail-content {
+  width: 100%;
+}
+
+.brand-detail-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #18113c;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.brand-detail-desc {
+  font-size: 1.125rem;
+  color: #2d3557;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  text-align: justify;
+}

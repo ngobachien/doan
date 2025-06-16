@@ -1,0 +1,44 @@
+.promotion-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e8f5e9;
+  padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.promotion-page h1 {
+  color: #2e7d32;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.promotion-page p {
+  color: #388e3c;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.promotion-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.promotion-item {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #2e7d32;
+  transition: transform 0.2s;
+}
+
+.promotion-item:hover {
+  transform: scale(1.05);
+}

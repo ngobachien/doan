@@ -1,0 +1,468 @@
+.header-menu-container {
+  position: relative;
+  width: 100%;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  padding: 0.2rem 2rem 0.7rem 2rem;
+  background: #120c3c;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+
+
+.mobile-menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.menu-item {
+  position: relative;
+}
+
+/* Tạo vùng hover mở rộng để dễ di chuyển chuột */
+.has-dropdown::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  right: -10px;
+  height: 10px;
+  background: transparent;
+  z-index: 9;
+}
+
+.menu-link {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-link.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  font-weight: 500;
+}
+
+.menu-link:hover {
+  color: #00e0ff;
+}
+
+.has-dropdown .dropdown-arrow {
+  margin-left: 0.3rem;
+  font-size: 0.9em;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 2.2rem;
+  background: #1a144d;
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  z-index: 10;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  /* Thêm khoảng cách để dễ di chuyển chuột */
+  margin-top: -2px;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-item {
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #00e0ff;
+  color: #120c3c;
+}
+
+@media (max-width: 1024px) {
+  .header-menu {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+    top: 1rem;
+    left: 1rem;
+    transform: none;
+    transition: all 0.3s ease;
+  }
+
+  /* Khi menu mở, di chuyển nút toggle lên trên cùng của màn hình */
+  .mobile-menu-toggle.active {
+    position: fixed !important;
+    top: 50px !important;
+    right: 50px !important;
+    left: auto !important;
+    z-index: 99999 !important;
+    background: transparent !important;
+    padding: 8px !important;
+    border-radius: 0 !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 40px !important;
+    height: 40px !important;
+    transition: all 0.3s ease !important;
+    transform: translateX(0) scale(1) rotate(0deg) !important;
+    animation: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    opacity: 1 !important;
+  }
+
+
+
+  /* Hover effect cho nút toggle khi ở trên cùng */
+  .mobile-menu-toggle.active:hover {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: scale(1.1) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* Đảm bảo icon trong nút toggle có màu phù hợp */
+  .mobile-menu-toggle.active span {
+    background: #0f0a35 !important;
+    width: 24px !important;
+    height: 3px !important;
+    border-radius: 1px !important;
+    box-shadow:
+      0 2px 6px rgba(0, 0, 0, 0.4),
+      0 0 8px rgba(15, 10, 53, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.4s ease !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    filter: brightness(1.2) contrast(1.1) !important;
+  }
+
+  /* Tạo chữ X từ span đầu tiên và cuối cùng */
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) !important;
+    background: linear-gradient(135deg, #0f0a35, #1a1456, #0f0a35) !important;
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.5),
+      0 0 12px rgba(15, 10, 53, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+    transform: scale(0) !important;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) !important;
+    background: linear-gradient(135deg, #0f0a35, #1a1456, #0f0a35) !important;
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.5),
+      0 0 12px rgba(15, 10, 53, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  }
+
+  /* Hiệu ứng hover cho icon */
+  .mobile-menu-toggle.active:hover span {
+    background: linear-gradient(135deg, #1a1456, #2a1f66, #1a1456) !important;
+    box-shadow:
+      0 3px 12px rgba(0, 0, 0, 0.6),
+      0 0 16px rgba(26, 20, 86, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    filter: brightness(1.4) contrast(1.2) !important;
+    transform: scale(1.05) !important;
+  }
+
+  .mobile-menu-toggle.active:hover span:nth-child(1) {
+    transform: rotate(45deg) scale(1.05) !important;
+  }
+
+  .mobile-menu-toggle.active:hover span:nth-child(3) {
+    transform: rotate(-45deg) scale(1.05) !important;
+  }
+
+  /* Đảm bảo nút không bị khuất trên mobile */
+  @media (max-width: 768px) {
+    .mobile-menu-toggle.active {
+      top: 40px !important;
+      right: 40px !important;
+      width: 35px !important;
+      height: 35px !important;
+      padding: 6px !important;
+    }
+
+    .mobile-menu-toggle.active span {
+      width: 20px !important;
+      height: 3px !important;
+      background: linear-gradient(135deg, #0f0a35, #1a1456, #0f0a35) !important;
+      opacity: 1 !important;
+      position: absolute !important;
+      box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.4),
+        0 0 8px rgba(15, 10, 53, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+      filter: brightness(1.2) contrast(1.1) !important;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) !important;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) !important;
+    }
+  }
+
+  /* Đảm bảo nút không bị khuất trên màn hình rất nhỏ */
+  @media (max-width: 480px) {
+    .mobile-menu-toggle.active {
+      top: 30px !important;
+      right: 30px !important;
+      width: 32px !important;
+      height: 32px !important;
+      padding: 5px !important;
+    }
+
+    .mobile-menu-toggle.active span {
+      width: 18px !important;
+      height: 3px !important;
+      background: linear-gradient(135deg, #0f0a35, #1a1456, #0f0a35) !important;
+      opacity: 1 !important;
+      position: absolute !important;
+      box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.4),
+        0 0 8px rgba(15, 10, 53, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+      filter: brightness(1.2) contrast(1.1) !important;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) !important;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) !important;
+    }
+  }
+
+  /* Đảm bảo nút hiển thị tốt trên màn hình lớn */
+  @media (min-width: 1200px) {
+    .mobile-menu-toggle.active {
+      top: 60px !important;
+      right: 60px !important;
+      width: 45px !important;
+      height: 45px !important;
+      padding: 10px !important;
+    }
+
+    .mobile-menu-toggle.active span {
+      width: 26px !important;
+      height: 3.5px !important;
+      background: linear-gradient(135deg, #0f0a35, #1a1456, #0f0a35) !important;
+      opacity: 1 !important;
+      position: absolute !important;
+      box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.5),
+        0 0 10px rgba(15, 10, 53, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+      filter: brightness(1.3) contrast(1.2) !important;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) !important;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) !important;
+    }
+  }
+
+
+
+
+
+
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  .mobile-menu-overlay {
+    display: block;
+  }
+
+  .header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: #120c3c;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+    padding: 4rem 0 2rem 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+  }
+
+  .header-menu.mobile-open {
+    transform: translateX(0);
+    padding-top: 7rem;
+  }
+
+  .menu-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .menu-link {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border-bottom: none;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    background: #0f0a35;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-item {
+    padding: 0.8rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 1rem;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(0, 224, 255, 0.1);
+  }
+
+  .dropdown-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .has-dropdown .dropdown-menu.show + .menu-link .dropdown-arrow,
+  .menu-item:hover .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .header-menu {
+    width: 100vw;
+    transform: translateX(-100%);
+  }
+
+  .header-menu.mobile-open {
+    transform: translateX(0);
+  }
+}

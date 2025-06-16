@@ -1,0 +1,176 @@
+.ignore-banner {
+  width: 100vw;
+  min-height: 110px;
+  background: linear-gradient(120deg, #b18be8 0%, #b1eaff 60%, #7ff6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ignore-banner-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #18113c;
+  font-family: "Montserrat", Arial, sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.ignore-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0 24px 0;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.ignore-filter {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.ignore-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ignore-sort-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.ignore-sort-select {
+  margin-left: 6px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background-color: #1a1f3a;
+  color: #b0b7c9;
+}
+
+.ignore-sort-select option {
+  background-color: #1a1f3a;
+  color: #b0b7c9;
+}
+
+.ignore-count {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.ignore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin: 0 32px 32px 32px;
+  background-color: #1a1f3a;
+}
+
+.ignore-card {
+  background: #18113c;
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ignore-img-wrap {
+  width: 100%;
+  height: 220px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ignore-img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.ignore-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #c9a4f7;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.ignore-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.ignore-rating {
+  padding: 0 10px 10px;
+  text-align: center;
+  color: #7ff6ff;
+}
+
+.star {
+  font-size: 0.9rem;
+}
+
+.filled {
+  color: #7ff6ff;
+}
+
+.ignore-reviews {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.ignore-prices {
+  margin-bottom: 12px;
+}
+
+.ignore-oldprice {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 8px;
+}
+
+.ignore-price {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.ignore-btn {
+  background: #7ff6ff;
+  color: #18113c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 90%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: auto;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ignore-btn:hover {
+  background: #b1eaff;
+}

@@ -1,0 +1,114 @@
+.footer-insider {
+  background: linear-gradient(180deg, #e6e6fa 0%, #f3eaff 100%);
+  text-align: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+.footer-insider h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.7rem;
+  color: #231942;
+}
+.footer-insider p {
+  color: #6c648b;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.insider-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.insider-form input[type="email"] {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #d1c4e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  color: #231942;
+  transition: border 0.2s;
+}
+.insider-form input[type="email"]:focus {
+  border: 1.5px solid #7c4dff;
+}
+.insider-form button {
+  background: #fff;
+  border: 1.5px solid #d1c4e9;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+  display: flex;
+  align-items: center;
+}
+.insider-form button:hover {
+  background: #e0e0ff;
+  border: 1.5px solid #7c4dff;
+}
+
+@media (max-width: 768px) {
+  .footer-insider {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+  .footer-insider h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  .footer-insider p {
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+    max-width: 500px;
+  }
+  .insider-form {
+    max-width: 320px;
+    gap: 0.7rem;
+  }
+  .insider-form input[type="email"] {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  .insider-form button {
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-insider {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .footer-insider h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .footer-insider p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  .insider-form {
+    flex-direction: column;
+    max-width: 280px;
+    gap: 1rem;
+  }
+  .insider-form input[type="email"] {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+  }
+  .insider-form button {
+    width: 100%;
+    padding: 0.9rem;
+    justify-content: center;
+  }
+}

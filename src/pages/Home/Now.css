@@ -1,0 +1,169 @@
+.hero-evo-section {
+  background: linear-gradient(180deg, #181046 0%, #2a1b66 100%);
+  padding: 3rem 0;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-evo-bg {
+  background: linear-gradient(135deg, #b5a11c 0%, #e6d65a 100%);
+  border-radius: 24px;
+  position: relative;
+  width: 96vw;
+  max-width: 1280px;
+  min-height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 8px 40px rgba(35, 25, 66, 0.2);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0); /* Hardware acceleration */
+}
+
+.hero-evo-bg:hover {
+  transform: scale(1.01) translateZ(0);
+}
+
+.hero-evo-content {
+  position: relative;
+  top: 100px;
+  left: 60px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 3rem 3.5rem;
+  max-width: 500px;
+  text-align: left;
+  z-index: 3;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hero-evo-content h1 {
+  color: #18143a;
+  font-size: 3.5rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-evo-content p {
+  color: #18143a;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.hero-evo-content button {
+  background: linear-gradient(45deg, #18143a, #3a2f7a);
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1) translateZ(0);
+}
+
+.hero-evo-content button:hover {
+  background: linear-gradient(45deg, #3fd0e0, #6ee7f7);
+  color: #18143a;
+  transform: scale(1.03) translateZ(0);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero-evo-content button:active {
+  transform: scale(0.95);
+}
+
+.hero-evo-flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 450px;
+  height: 450px;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 0 40px,
+    transparent 40px 80px
+  );
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-evo-bg:hover .hero-evo-flag {
+  transform: rotate(2deg);
+}
+
+@media (max-width: 1100px) {
+  .hero-evo-bg {
+    min-height: 500px;
+  }
+  .hero-evo-content {
+    left: 30px;
+    top: 70px;
+    padding: 2rem 2.5rem;
+    max-width: 400px;
+  }
+  .hero-evo-flag {
+    width: 300px;
+    height: 300px;
+  }
+  .hero-evo-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-evo-content p {
+    font-size: 1.1rem;
+  }
+  .hero-evo-content button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-evo-section {
+    padding: 1.5rem 0;
+  }
+  .hero-evo-bg {
+    min-height: 400px;
+    width: 98vw;
+    border-radius: 16px;
+  }
+  .hero-evo-content {
+    left: 15px;
+    top: 30px;
+    padding: 1.5rem;
+    max-width: 90vw;
+  }
+  .hero-evo-flag {
+    width: 150px;
+    height: 150px;
+  }
+  .hero-evo-content h1 {
+    font-size: 2rem;
+  }
+  .hero-evo-content p {
+    font-size: 1rem;
+  }
+  .hero-evo-content button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}

@@ -1,0 +1,331 @@
+.incentive-structure {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 4rem 2rem;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.incentive-structure::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="30" r="1.5" fill="%23ffffff" opacity="0.1"/><circle cx="40" cy="70" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="90" cy="80" r="2.5" fill="%23ffffff" opacity="0.1"/><circle cx="10" cy="60" r="1.8" fill="%23ffffff" opacity="0.1"/></svg>');
+  animation: sparkleMove 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes sparkleMove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-100px); }
+}
+
+.incentive-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.countdown-banner {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.countdown-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.5);
+  }
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.incentive-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.incentive-subtitle {
+  font-size: 1.3rem;
+  color: #00e0ff;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.incentive-table {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.header-cell {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.order-value {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.discount-level {
+  color: #00e0ff;
+  font-weight: 500;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.code-text {
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.copy-btn {
+  background: #00c4cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 60px;
+}
+
+.copy-btn:hover {
+  background: #00a1a7;
+  transform: translateY(-1px);
+}
+
+.copy-btn.copied {
+  background: #28a745;
+  transform: scale(1.05);
+}
+
+.note-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.note-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #00e0ff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+.note-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.note-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .incentive-structure {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .countdown-banner {
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .countdown-text {
+    font-size: 1rem;
+  }
+
+  .incentive-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .header-cell,
+  .table-cell {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .table-cell::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #00e0ff;
+    margin-right: 1rem;
+    min-width: 120px;
+  }
+
+  .code-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+
+  .copy-btn {
+    width: 100%;
+  }
+
+  .note-section {
+    padding: 1.5rem;
+  }
+
+  .note-title {
+    font-size: 1.5rem;
+  }
+
+  .note-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .incentive-structure {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .countdown-banner {
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .countdown-text {
+    font-size: 0.9rem;
+  }
+
+  .incentive-title {
+    font-size: 1.8rem;
+  }
+
+  .table-row {
+    padding: 1rem;
+  }
+
+  .code-container {
+    padding: 0.6rem 1rem;
+  }
+
+  .note-section {
+    padding: 1rem;
+  }
+}
