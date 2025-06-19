@@ -12,11 +12,11 @@
   align-items: center;
 }
 
-.header-logo img {
-  height: 80px;
-  max-width: 180px;
-  object-fit: contain;
-  display: block;
+.header-logo .logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: currentColor;
 }
 
 .header-icon {
@@ -47,9 +47,8 @@
     padding: 0.7rem 0.5rem 0.3rem 0.5rem;
     position: relative;
   }
-  .header-logo img {
-    height: 38px;
-    max-width: 120px;
+  .header-logo .logo-text {
+    font-size: 1.5rem;
   }
 
   /* Đảm bảo icon search không bị che khuất bởi menu toggle */

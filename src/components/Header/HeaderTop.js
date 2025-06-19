@@ -13,7 +13,7 @@ function HeaderTop({ currentPage, onPageChange }) {
         </button>
       </div>
       <div className="header-logo">
-        <img src="./images/alo-removebg-preview.png" alt="Billiardss.pro Logo" />
+        <span className="logo-text">BILLIARDSS</span>
       </div>
       <div className="header-icon right">
         <button className="icon-btn" aria-label="Tài khoản" onClick={() => onPageChange('login')}>
