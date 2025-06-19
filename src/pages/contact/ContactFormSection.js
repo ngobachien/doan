@@ -5,7 +5,7 @@ const info = [
   { label: "Address:", value: "Bắc Ninh City" },
   { label: "Phone:", value: "+84354 240 237" },
   { label: "E-mail:", value: "ngochien1234567892005@gmail.com" },
-  { label: "Website:", value: "....." },
+  { label: "Website:", value: "Billiardss.pro" },
 ];
 
 const ContactFormSection = () => {

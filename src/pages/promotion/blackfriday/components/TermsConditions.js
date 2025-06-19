@@ -6,7 +6,7 @@ const TermsConditions = () => {
     {
       number: '1.',
       title: '🎯 Áp dụng cho tất cả khách hàng',
-      description: 'mua sắm trên website NewGenCue.'
+      description: 'mua sắm trên website Billiardss.pro.'
     },
     {
       number: '2.',

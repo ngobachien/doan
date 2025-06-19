@@ -6,7 +6,7 @@ const Vision = () => (
     <div className="vision-top">
       <h2 className="vision-title">VISION AND MISSION</h2>
       <p className="vision-desc">
-        We were inspired by that fire to establish NEWGENCUE - a new generation full of youth and enthusiasm that will provide customers with high-quality cues imported directly from famous brands as well as contribute to the mission of making Vietnamese Billiards develop strongly. As Billiards legend - Shane Van Boening once confided:
+        We were inspired by that fire to establish Billiardss.pro - a new generation full of youth and enthusiasm that will provide customers with high-quality cues imported directly from famous brands as well as contribute to the mission of making Vietnamese Billiards develop strongly. As Billiards legend - Shane Van Boening once confided:
       </p>
     </div>
     <div className="vision-img-wrap">

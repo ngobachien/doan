@@ -14,36 +14,36 @@ import Register from './pages/Register';
 import Promotion from './pages/Promotion';
 import News from './pages/News';
 import Article from './pages/Article';
+import LoginForm from './pages/LoginForm'; // Corrected from LoginForm to Login
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    // Smooth scroll to top with better performance
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
-    // Initialize performance optimizations
     initPerformanceOptimizations();
   }, []);
 
   return (
     <div className="app hw-accelerated">
-      <Header onPageChange={handlePageChange} currentPage={currentPage} />
+      {currentPage !== 'login' && <Header onPageChange={handlePageChange} currentPage={currentPage} />}
       <main className="main-content hw-accelerated">
         {currentPage === 'home' && <Home onPageChange={handlePageChange} />}
-        {(currentPage.startsWith('product')) && <Product category={currentPage} />}
-        {(currentPage.startsWith('brand')) && <Trademark category={currentPage} />}
-        {(currentPage.startsWith('promo')) && <Promotion promo={currentPage} />}
+        {currentPage.startsWith('product') && <Product category={currentPage} />}
+        {currentPage.startsWith('brand') && <Trademark category={currentPage} />}
+        {currentPage.startsWith('promo') && <Promotion promo={currentPage} />}
         {currentPage === 'about' && <About />}
         {currentPage === 'contact' && <Contact />}
         {currentPage === 'register' && <Register />}
         {currentPage === 'news' && <News />}
         {(currentPage === 'article' || currentPage === 'posts') && <Article />}
+        {currentPage === 'login' && <LoginForm onPageChange={handlePageChange} />}
       </main>
-      <Footer />
+      {currentPage !== 'login' && <Footer />}
     </div>
   );
 }

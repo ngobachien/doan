@@ -8,7 +8,7 @@ const SummerSaleBanner = () => {
         <h1 className="brand-detail-title">Super sale - fiery summer</h1>
         <p className="brand-detail-desc">Up to 20% off</p>
         <p className="brand-detail-desc">
-          NEWGENCUE offers up to 20% off on a wide range of Peri, Rhino, Cuetec, Fury cues
+          Billiardss.pro offers up to 20% off on a wide range of Peri, Rhino, Cuetec, Fury cues
           and billiard accessories. Don’t miss out on upgrading your billiard equipment!
         </p>
         <button className="learn-more-btn">LEARN MORE</button>

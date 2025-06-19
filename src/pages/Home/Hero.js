@@ -8,7 +8,7 @@ function Hero({ onPageChange }) {
       <div className="hero-overlay"></div>
       <div className="hero-box left-align hw-accelerated">
         <h1 className="optimized-text">Discover Your Perfect Cue</h1>
-        <p className="optimized-text">Elevate your game with newGenCue's premium selection of cues, blending timeless craftsmanship with cutting-edge design. Find your ideal cue and dominate the pool table!</p>
+        <p className="optimized-text">Elevate your game with Billiardss.pro's premium selection of cues, blending timeless craftsmanship with cutting-edge design. Find your ideal cue and dominate the pool table!</p>
         <button className="hero-btn optimized-button" onClick={() => onPageChange('products')}>
           Explore Now
         </button>

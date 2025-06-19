@@ -36,7 +36,7 @@ const Collections = ({ onPageChange }) => {
     <section className="collections-section">
       <h2 className="collections-title">COLLECTIONS</h2>
       <p className="collections-subtitle">
-        Explore the collection curated by NewGenCue now
+        Explore the collection curated by Billiardss.pro now
       </p>
       <div className="collections-grid">
         {collections.map((cue) => (

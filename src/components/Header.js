@@ -22,7 +22,7 @@ function Header({ onPageChange, currentPage }) {
 
   return (
     <header className="header sticky">
-      <HeaderTop currentPage={currentPage} />
+      <HeaderTop currentPage={currentPage} onPageChange={onPageChange} />
       <HeaderMenu
         currentPage={currentPage}
         onPageChange={onPageChange}

@@ -469,10 +469,6 @@ const AllProduct = () => {
 
   return (
     <>
-      <div className="allproduct-banner">
-        <h1 className="allproduct-banner-title">All Products</h1>
-        <p className="allproduct-banner-subtitle">Discover Our Complete Collection of Premium Billiard Equipment</p>
-      </div>
       <div className="allproduct-toolbar">
         <div className="allproduct-filter">
           <span className="allproduct-filter-icon">⚙</span> Filter

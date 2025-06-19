@@ -9,7 +9,7 @@ const NewsSection = () => (
         Billiards story every<br />day, did you know?
       </h1>
       <p className="news-section-desc">
-        This is where NewGenCue shares exciting tournaments, talented players, and unforgettable moments in billiards. Follow us so you don't miss anything interesting!
+        This is where Billiardss.pro shares exciting tournaments, talented players, and unforgettable moments in billiards. Follow us so you don't miss anything interesting!
       </p>
     </div>
   </section>

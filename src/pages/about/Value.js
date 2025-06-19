@@ -4,7 +4,7 @@ import "./Value.css";
 const items = [
   {
     title: "Ensure reputation and quality",
-    content: "We always put reputation and product quality first, bringing peace of mind to customers when choosing Newgencue.",
+    content: "We always put reputation and product quality first, bringing peace of mind to customers when choosing Billiardss.pro.",
   },
   {
     title: "Product diversity",
@@ -62,7 +62,7 @@ const Value = () => {
           className="value-bottom-img"
         />
         <div className="value-bottom-text">
-          Come to us - NEWGENCUE to discover a world of Billiards of the new generation full of passion and style.
+          Come to us - Billiardss.pro to discover a world of Billiards of the new generation full of passion and style.
         </div>
       </div>
     </section>

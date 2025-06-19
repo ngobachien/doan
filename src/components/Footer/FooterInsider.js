@@ -6,7 +6,7 @@ function FooterInsider() {
     <div className="footer-insider">
       <h2>TRỞ THÀNH NGƯỜI TRONG CUỘC</h2>
       <p>
-        Đăng ký ngay để nhận thông tin cập nhật độc quyền về sản phẩm mới, tin tức thể thao và chương trình khuyến mãi! Cập nhật những xu hướng mới nhất từ NewGenCue và luôn dẫn đầu trong trò chơi.
+        Đăng ký ngay để nhận thông tin cập nhật độc quyền về sản phẩm mới, tin tức thể thao và chương trình khuyến mãi! Cập nhật những xu hướng mới nhất từ Billiardss.pro và luôn dẫn đầu trong trò chơi.
       </p>
       <form className="insider-form" onSubmit={e => e.preventDefault()}>
         <input type="email" placeholder="E-mail" required />
