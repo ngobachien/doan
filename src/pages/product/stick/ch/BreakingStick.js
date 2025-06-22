@@ -72,27 +72,24 @@ const BreakingStick = () => {
   return (
     <>
       <div className="breaking-stick-banner">
-        <h1 className="breaking-stick-title">BREAKING STICK</h1>
+        <h1 className="breaking-stick-title">Gậy phá</h1>
       </div>
       <div className="breaking-stick-toolbar">
-        <div className="breaking-stick-filter">
-          <span className="breaking-stick-filter-icon">⚙</span> Filter
-        </div>
         <div className="breaking-stick-sort">
-          <span>Sort by:</span>
+          <span>Lọc:</span>
           <select value={sort} onChange={e => setSort(e.target.value)}>
-            <option value="best">Best Seller</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
+            <option value="best">Bán chạy nhất</option>
+            <option value="price-asc">Giá: Cao đến thấp</option>
+            <option value="price-desc">Giá: Thấp đến cao</option>
           </select>
         </div>
-        <div className="breaking-stick-count">{breakingSticks.length} products</div>
+        <div className="breaking-stick-count">{breakingSticks.length} Các sản phẩm</div>
       </div>
       <div className="breaking-stick-grid">
         {breakingSticks.map((stick, index) => (
           <div className="breaking-stick-card" key={stick.id}>
             <div className="breaking-stick-img-wrap">
-              {stick.discount && <span className="breaking-stick-discount">Discount</span>}
+              {stick.discount && <span className="breaking-stick-discount">Giảm giá</span>}
               <img src={stick.image} alt={stick.name} className="breaking-stick-img" />
             </div>
             <div className="breaking-stick-name">{stick.name}</div>
@@ -109,7 +106,7 @@ const BreakingStick = () => {
               <span className="breaking-stick-price">{formatPrice(stick.price)}</span>
             </div>
             <button className="breaking-stick-btn">
-              {stick.options ? 'Select options' : 'Add to cart'}
+              {stick.options ? 'Chọn tùy chọn': 'Thêm vào giỏ hàng'}
             </button>
           </div>
         ))}

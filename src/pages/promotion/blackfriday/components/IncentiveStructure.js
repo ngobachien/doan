@@ -62,7 +62,7 @@ const IncentiveStructure = () => {
           <div className="countdown-text">⏰ Chỉ còn 5 ngày! Khuyến mãi kết thúc {getEndDate()}</div>
         </div>
         <div className="title-section">
-          <h1 className="incentive-title">🔥 BLACK FRIDAY MEGA SALE 🔥</h1>
+          <h1 className="incentive-title">🔥 KHUYẾN MẠI LỚN BLACK FRIDAY 🔥</h1>
           <p className="incentive-subtitle">Ưu đãi khủng cho tất cả sản phẩm cơ bida cao cấp</p>
         </div>
 

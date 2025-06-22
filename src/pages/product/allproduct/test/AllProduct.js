@@ -471,23 +471,23 @@ const AllProduct = () => {
     <>
       <div className="allproduct-toolbar">
         <div className="allproduct-filter">
-          <span className="allproduct-filter-icon">⚙</span> Filter
+          <span className="allproduct-filter-icon">⚙</span> Lọc:
         </div>
         <div className="allproduct-sort">
-          <span>Sort by:</span>
+          <span>Sắp xếp theo:</span>
           <select value={sort} onChange={(e) => setSort(e.target.value)}>
-            <option value="best">Best Seller</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
+            <option value="best">Bán chạy nhất</option>
+            <option value="price-asc">Giá: Thấp đến Cao</option>
+            <option value="price-desc">Giá: Cao đến thấp</option>
           </select>
         </div>
-        <div className="allproduct-count">{products.length} products</div>
+        <div className="allproduct-count">{products.length} các sản phẩm</div>
       </div>
       <div className="allproduct-grid">
         {currentProducts.map((product) => (
           <div className="allproduct-card" key={product.id}>
             <div className="allproduct-img-wrap">
-              {product.discount && <span className="allproduct-discount">Discount</span>}
+              {product.discount && <span className="allproduct-discount">Giảm giá</span>}
               <img
                 src={product.image}
                 alt={product.name}
@@ -517,7 +517,7 @@ const AllProduct = () => {
                   <span className="allproduct-price">{formatPrice(product.price)}</span>
                 </div>
                 <button className="allproduct-btn">
-                  {product.options ? 'Select options' : 'Add to cart'}
+                  {product.options ? 'Chọn tùy chọn': 'Thêm vào giỏ hàng'}
                 </button>
               </div>
             </div>
@@ -526,7 +526,7 @@ const AllProduct = () => {
       </div>
       <div className="allproduct-pagination">
         <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
-          Previous
+          Trước
         </button>
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
           <button
@@ -538,7 +538,7 @@ const AllProduct = () => {
           </button>
         ))}
         <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === totalPages}>
-          Next
+          Kế tiếp
         </button>
       </div>
     </>

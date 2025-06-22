@@ -17,7 +17,7 @@ const products = [
 
 const GENUINE = ({ onPageChange }) => (
   <section className="genuine-section">
-    <h2 className="genuine-title">Genuine Clubs from Top Brands</h2>
+    <h2 className="genuine-title">Gậy chính hãng từ các thương hiệu hàng đầu</h2>
     <div className="genuine-brands">
       {brands.map((b, i) => (
         <img key={i} src={b.logo} alt={b.name} className="genuine-brand-logo" />

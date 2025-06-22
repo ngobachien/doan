@@ -91,21 +91,18 @@ const CueShop = () => {
     <div className="cueshop-container">
       {/* Header */}
       <div className="cueshop-header">
-        <div className="filter-btn">
-          <span>⚙</span> Filter
-        </div>
-        
+
         <div className="sort-section">
-          <span>Sort by:</span>
+          <span>Lọc: </span>
           <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-            <option>Best Seller</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option>Bán chạy nhất </option>
+            <option>Giá: Cao đến thấp</option>
+            <option>Giá: Thấp đến cao</option>
           </select>
         </div>
         
         <div className="product-count">
-          {products.length} products
+          {products.length} Cao sản phẩm
         </div>
       </div>
 
@@ -113,7 +110,7 @@ const CueShop = () => {
       <div className="products-grid">
         {products.map(product => (
           <div key={product.id} className="product-card">
-            {product.hasDiscount && <div className="discount-badge">Discount</div>}
+            {product.hasDiscount && <div className="discount-badge">Giảm giá</div>}
             
             <div className="product-image">
               <img src={product.imageUrl} alt={product.name} onError={(e) => { e.target.src = 'https://via.placeholder.com/150'; }} />
@@ -125,7 +122,7 @@ const CueShop = () => {
                 <span className="current-price">{product.price}</span>
                 {product.hasDiscount && <span className="original-price">{product.originalPrice}</span>}
               </div>
-              <button className="add-to-cart">Add to cart</button>
+              <button className="add-to-cart">Thêm vào giỏ hàng</button>
             </div>
           </div>
         ))}

@@ -4,9 +4,9 @@ import "./Vision.css";
 const Vision = () => (
   <section className="vision-section">
     <div className="vision-top">
-      <h2 className="vision-title">VISION AND MISSION</h2>
+      <h2 className="vision-title">TẦM NHÌN VÀ SỨ MẠNG</h2>
       <p className="vision-desc">
-        We were inspired by that fire to establish Billiardss.pro - a new generation full of youth and enthusiasm that will provide customers with high-quality cues imported directly from famous brands as well as contribute to the mission of making Vietnamese Billiards develop strongly. As Billiards legend - Shane Van Boening once confided:
+        Chúng tôi được truyền cảm hứng từ ngọn lửa đó để thành lập Billiardss.pro - một thế hệ mới tràn đầy sức trẻ và nhiệt huyết sẽ cung cấp cho khách hàng những cơ bida chất lượng cao được nhập khẩu trực tiếp từ các thương hiệu nổi tiếng cũng như góp phần vào sứ mệnh đưa bộ môn bida Việt Nam phát triển mạnh mẽ. Như huyền thoại Billiards - Shane Van Boening đã từng tâm sự:
       </p>
     </div>
     <div className="vision-img-wrap">

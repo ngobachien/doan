@@ -17,26 +17,25 @@ function BilliardShop() {
   return (
     <div className="billiard-shop">
       <div className="shop-controls">
-        <button className="filter-btn">Filter</button>
         <div className="sort-section">
-          <span>Sort by:</span>
+          <span>Lọc:</span>
           <select>
-            <option>Best Seller</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option>Bán chạy nhất</option>
+            <option>Giá: Cao đến thấp</option>
+            <option>Giá: Thấp đến cao</option>
           </select>
         </div>
-        <span className="product-count">{products.length} products</span>
+        <span className="product-count">{products.length} Các sản phẩm</span>
       </div>
 
       <div className="product-container">
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={product.name} />
-            {product.discount && <span className="discount">Discount</span>}
+            {product.discount && <span className="discount">Giảm giá</span>}
             <h3>{product.name}</h3>
             <p>{product.price}</p>
-            <button className="select-options">Select options</button>
+            <button className="select-options">Chọn tùy chọn </button>
           </div>
         ))}
       </div>

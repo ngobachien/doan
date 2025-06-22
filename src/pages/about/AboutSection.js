@@ -5,7 +5,7 @@ const AboutSection = () => (
   <section className="about-section-banner">
     <div className="about-section-bg" />
     <h1 className="about-section-title">
-      ABOUT Billiardss.pro - THE BEGINNING OF A NEW GENERATION OF VIETNAMESE BILLIARDS
+      GIỚI THIỆU VỀ BILLIARDSS.PRO - SỰ KHỞI ĐẦU CỦA MỘT THẾ HỆ BILLIARD VIỆT NAM MỚI
     </h1>
   </section>
 );

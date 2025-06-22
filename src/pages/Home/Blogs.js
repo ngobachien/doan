@@ -18,14 +18,14 @@ const blogs = [
 
 const Blogs = ({ onPageChange }) => (
   <section className="blogs-section">
-    <h2 className="blogs-title">Our Blogs</h2>
+    <h2 className="blogs-title">Nhật ký của chúng tôi </h2>
     <div className="blogs-list">
       {blogs.map((b, i) => (
         <div className="blog-card" key={i}>
           <img src={b.image} alt={b.title} className="blog-img" />
           <div className="blog-content">
             <div className="blog-card-title">{b.title}</div>
-            <button className="blog-btn">See More</button>
+            <button className="blog-btn">XEM THÊM</button>
           </div>
         </div>
       ))}

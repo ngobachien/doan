@@ -11,9 +11,9 @@ const Passion = () => (
       />
     </div>
     <div className="passion-content">
-      <h2 className="passion-title">SOURCE OF PASSION</h2>
+      <h2 className="passion-title">NGUỒN ĐAM MÊ</h2>
       <p className="passion-desc">
-        Eleanor Roosevelt once said, "The future belongs to those who believe in the beauty of their dreams." We - Billiardss.pro, also believe in that to constantly strive to nurture and nurture this brainchild to everyone with the desire to make Billiards popular throughout Vietnam and leave a deep impression in everyone's mind about a sport that requires high intelligence and constant effort.
+       Eleanor Roosevelt đã từng nói: "Tương lai thuộc về những ai tin vào vẻ đẹp của ước mơ". Chúng tôi - Billiardss.pro, cũng tin vào điều đó để không ngừng nỗ lực nuôi dưỡng và vun đắp đứa con tinh thần này đến với mọi người với mong muốn đưa bộ môn Billiards trở nên phổ biến khắp Việt Nam và để lại ấn tượng sâu sắc trong tâm trí mọi người về một môn thể thao đòi hỏi trí tuệ cao và sự nỗ lực không ngừng.
       </p>
     </div>
   </section>

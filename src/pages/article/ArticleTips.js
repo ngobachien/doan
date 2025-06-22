@@ -4,8 +4,8 @@ import "./ArticleTips.css";
 const ArticleTips = () => (
   <section className="articletips-section">
     <div className="articletips-content">
-      <h2 className="articletips-title">Tips for choosing the right pool cue for you</h2>
-      <button className="articletips-btn">SEE MORE</button>
+      <h2 className="articletips-title">Mẹo chọn gậy bida phù hợp với bạn</h2>
+      <button className="articletips-btn">XEM THÊM</button>
     </div>
     <div className="articletips-img-wrap">
       <img

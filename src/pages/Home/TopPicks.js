@@ -23,12 +23,12 @@ function formatPrice(price) {
 function TopPicks() {
   return (
     <section className="top-picks-section">
-      <h2 className="top-picks-title">Top Picks</h2>
+      <h2 className="top-picks-title">Lựa chọn hàng đầu </h2>
       <div className="top-picks-grid">
         {topPicks.map(product => (
           <div className="top-pick-card" key={product.id}>
             <div className="top-pick-img-wrap">
-              {product.discount && <span className="discount-badge">Discount</span>}
+              {product.discount && <span className="discount-badge">Giảm giá</span>}
               <img src={product.image} alt={product.name} />
             </div>
             <div className="top-pick-info">
@@ -46,7 +46,7 @@ function TopPicks() {
                 <span className="new-price">{formatPrice(product.price)}</span>
               </div>
               <button className="top-pick-btn">
-                {product.options ? 'Select Options' : 'Add to Cart'}
+                {product.options ? 'Chọn Tùy chọn': 'Thêm vào Giỏ hàng'}
               </button>
             </div>
           </div>

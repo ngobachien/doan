@@ -41,30 +41,29 @@ const IgnorePage = () => {
   return (
     <div>
       <div className="ignore-banner">
-        <h1 className="ignore-banner-title">Ignore</h1>
+        <h1 className="ignore-banner-title">Lơ</h1>
       </div>
       <div className="ignore-toolbar">
         <div className="ignore-filter">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
             <path d="M3 5h18M6 12h12M10 19h4" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
           </svg>
-          <span>Filter</span>
         </div>
         <div className="ignore-toolbar-right">
-          <span className="ignore-sort-label">Sort by:</span>
+          <span className="ignore-sort-label">Lọc:</span>
           <select className="ignore-sort-select">
-            <option>Best Seller</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option>Bán chạy nhất</option>
+            <option>Giá: Cao đến thấp</option>
+            <option>Giá: Thấp đến cao</option>
           </select>
-          <span className="ignore-count">{products.length} products</span>
+          <span className="ignore-count">{products.length} sản phẩm</span>
         </div>
       </div>
       <div className="ignore-grid">
         {products.map((product) => (
           <div className="ignore-card" key={product.id}>
             <div className="ignore-img-wrap">
-              {product.discount && <span className="ignore-discount">Discount</span>}
+              {product.discount && <span className="ignore-discount">Giảm giá</span>}
               <img src={product.image} alt={product.name} className="ignore-img" />
             </div>
             <div className="ignore-name">{product.name}</div>
@@ -80,7 +79,7 @@ const IgnorePage = () => {
               {product.oldPrice && <span className="ignore-oldprice">{product.oldPrice.toLocaleString("vi-VN")} VND</span>}
               <span className="ignore-price">{product.price.toLocaleString("vi-VN")} VND</span>
             </div>
-            <button className="ignore-btn">{product.options ? "Select options" : "Add to cart"}</button>
+            <button className="ignore-btn">{product.options ? 'Chọn tùy chọn': 'Thêm vào giỏ hàng'}</button>
           </div>
         ))}
       </div>

@@ -29,14 +29,14 @@ const Collections = ({ onPageChange }) => {
   const [hoveredId, setHoveredId] = useState(null);
 
   if (!collections.length) {
-    return <p className="no-collections">No collections available.</p>;
+    return <p className="no-collections">Không có bộ sưu tập có sẵn.</p>;
   }
 
   return (
     <section className="collections-section">
-      <h2 className="collections-title">COLLECTIONS</h2>
+      <h2 className="collections-title">BỘ SƯU TẬP</h2>
       <p className="collections-subtitle">
-        Explore the collection curated by Billiardss.pro now
+        Khám phá bộ sưu tập được Billiardss.pro tuyển chọn ngay bây giờ
       </p>
       <div className="collections-grid">
         {collections.map((cue) => (

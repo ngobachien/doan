@@ -41,30 +41,29 @@ const MuscleBagPage = () => {
   return (
     <div>
       <div className="muscle-bag-banner">
-        <h1 className="muscle-bag-banner-title">Muscle bag</h1>
+        <h1 className="muscle-bag-banner-title">Túi đựng cơ</h1>
       </div>
       <div className="muscle-bag-toolbar">
         <div className="muscle-bag-filter">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
             <path d="M3 5h18M6 12h12M10 19h4" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
           </svg>
-          <span>Filter</span>
         </div>
         <div className="muscle-bag-toolbar-right">
-          <span className="muscle-bag-sort-label">Sort by:</span>
+          <span className="muscle-bag-sort-label">Lọc:</span>
           <select className="muscle-bag-sort-select">
-            <option>Best Seller</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option>Bán chạy nhất</option>
+            <option>Giá: Cao đến thấp</option>
+            <option>Giá: Thấp đến cao</option>
           </select>
-          <span className="muscle-bag-count">3 products</span>
+          <span className="muscle-bag-count">3 sản phẩm</span>
         </div>
       </div>
       <div className="muscle-bag-grid">
         {products.map((product) => (
           <div className="muscle-bag-card" key={product.id}>
             <div className="muscle-bag-img-wrap">
-              {product.discount && <span className="muscle-bag-discount">Discount</span>}
+              {product.discount && <span className="muscle-bag-discount">Giảm giá</span>}
               <img src={product.image} alt={product.name} className="muscle-bag-img" />
             </div>
             <div className="muscle-bag-name">{product.name}</div>
@@ -81,7 +80,7 @@ const MuscleBagPage = () => {
               <span className="muscle-bag-price">{product.price.toLocaleString("vi-VN")} VND</span>
             </div>
             <button className="muscle-bag-btn">
-              {product.options ? "Select options" : "Add to cart"}
+              {product.options ? 'Chọn tùy chọn': 'Thêm vào giỏ hàng'}
             </button>
           </div>
         ))}

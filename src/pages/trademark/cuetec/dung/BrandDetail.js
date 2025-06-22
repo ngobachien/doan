@@ -6,10 +6,10 @@ const BrandDetail = () => (
     <div className="brand-detail-content">
       <h1 className="brand-detail-title">Cuetec</h1>
       <p className="brand-detail-desc">
-        The Cuetec cue burst onto the scene in 1989 as a new concept in pool cues. The basic premise was a cue, using a patented process, with a Grade A Plus North American maple shaft covered with a thin layer of fiberglass or graphite, that would stay straight in any adverse conditions, be extremely resistant to damage from the rigors of any style of play, be easy to maintain, and most importantly, offer true professional quality and playability at a price that virtually anyone could afford.
+        Cơ Cuetec bùng nổ vào năm 1989 như một khái niệm mới về cơ bida. Tiền đề cơ bản là một cơ, sử dụng quy trình được cấp bằng sáng chế, với cán gỗ thích Bắc Mỹ loại A Plus được phủ một lớp sợi thủy tinh hoặc than chì mỏng, có thể giữ thẳng trong mọi điều kiện bất lợi, cực kỳ bền bỉ trước hư hỏng do sự khắc nghiệt của mọi phong cách chơi, dễ bảo trì và quan trọng nhất là cung cấp chất lượng và khả năng chơi chuyên nghiệp thực sự với mức giá mà hầu như bất kỳ ai cũng có thể mua được.
       </p>
       <p className="brand-detail-desc">
-        Since then, Cuetec has continued to be the highest quality and most professional cue available on the market. Cuetec has won hundreds of tournaments to prove it.
+        Từ đó, Cuetec vẫn tiếp tục là cơ chất lượng cao nhất và chuyên nghiệp nhất trên thị trường. Cuetec đã giành chiến thắng trong hàng trăm giải đấu để chứng minh điều đó.
       </p>
     </div>
   </div>

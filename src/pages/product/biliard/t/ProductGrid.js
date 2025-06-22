@@ -54,20 +54,20 @@ const ProductGrid = () => {
           <span>Filter</span>
         </div>
         <div className="productgrid-toolbar-right">
-          <span className="productgrid-sort-label">Sort by:</span>
+          <span className="productgrid-sort-label">Lọc:</span>
           <select className="productgrid-sort-select">
-            <option>Best Seller</option>
-            <option value="low-to-high">Price: Low to High</option>
-            <option value="high-to-low">Price: High to Low</option>
+            <option>Bán chạy nhất</option>
+            <option value="low-to-high">Giá: Cao đến thấp</option>
+            <option value="high-to-low">Giá: Thấp đến cao</option>
           </select>
-          <span className="productgrid-count">{products.length} products</span>
+          <span className="productgrid-count">{products.length} Các sản phẩm</span>
         </div>
       </div>
       <div className="productgrid-grid">
         {currentProducts.map(product => (
           <div className="productgrid-card" key={product.id}>
             <div className="productgrid-img-wrap">
-              {product.discount && <span className="productgrid-discount">Discount</span>}
+              {product.discount && <span className="productgrid-discount">Giảm giá</span>}
               <img src={product.image} alt={product.name} className="productgrid-img" />
             </div>
             <div className="productgrid-name">{product.name}</div>
@@ -84,7 +84,7 @@ const ProductGrid = () => {
               <span className="productgrid-price">{product.price.toLocaleString('vi-VN')} VND</span>
             </div>
             <button className="productgrid-btn">
-              {product.options ? 'Select options' : 'Add to cart'}
+              {product.options ? 'Chọn tùy chọn': 'Thêm vào giỏ hàng'}
             </button>
           </div>
         ))}

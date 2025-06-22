@@ -17,15 +17,15 @@ function FooterMain() {
       <div className="footer-col">
         <h3>CỬA HÀNG</h3>
         <ul>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">Về chúng tôi</a></li>
+          <li><a href="#collections">Bộ sưu tập</a></li>
           <li><a href="#promotions">Khuyến mãi</a></li>
           <li><a href="#posts">Bài viết</a></li>
         </ul>
       </div>
       <div className="footer-col footer-about">
         <p>
-          Chúng tôi - Billiards Pro Shop luôn chào đón bạn với chung một niềm đam mê mãnh liệt với Bi-a và đảm bảo quyền lợi mua hàng của bạn một cách tốt nhất
+          Chúng tôi - Billiardss.Pro Shop luôn chào đón bạn với chung một niềm đam mê mãnh liệt với Bi-a và đảm bảo quyền lợi mua hàng của bạn một cách tốt nhất
         </p>
         <img className="footer-billiard" src="./images/alo-removebg-preview.png" alt="billiard" />
       </div>

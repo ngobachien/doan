@@ -6,8 +6,8 @@ const Super = ({ onPageChange }) => {
     <div className="super-wrapper">
       <div className="super-about-row">
         <div className="super-about-box">
-          <h2>About Billiardss.pro</h2>
-          <p>Driven by passion, Billiardss.pro was founded to elevate Vietnamese Billiards with premium cues and accessories.</p>
+        <h2>Giới thiệu về Billiardss.pro</h2>
+        <p>Được thúc đẩy bởi niềm đam mê, Billiardss.pro được thành lập để nâng tầm bộ môn bida Việt Nam bằng những cơ và phụ kiện cao cấp.</p>
           <button className="super-about-btn">See More</button>
         </div>
         <div className="super-about-img-wrap">
@@ -15,15 +15,15 @@ const Super = ({ onPageChange }) => {
         </div>
       </div>
       <div className="super-sale-box">
-        <h2>Super Summer Sale</h2>
-        <p>Enjoy 20% off on Rhino, Peri, Fury, and Cuetec products at Billiardss.pro!</p>
+      <h2>Siêu khuyến mại mùa hè</h2>
+      <p>Giảm giá 20% cho các sản phẩm Rhino, Peri, Fury và Cuetec tại Billiardss.pro!</p>
         <div className="super-countdown">
-          <div className="super-countdown-item"><span>00</span><div>Days</div></div>
-          <div className="super-countdown-item"><span>00</span><div>Hours</div></div>
-          <div className="super-countdown-item"><span>00</span><div>Minutes</div></div>
-          <div className="super-countdown-item"><span>00</span><div>Seconds</div></div>
+          <div className="super-countdown-item"><span>00</span><div>Ngày</div></div>
+          <div className="super-countdown-item"><span>00</span><div>Giờ</div></div>
+          <div className="super-countdown-item"><span>00</span><div>Phút</div></div>
+          <div className="super-countdown-item"><span>00</span><div>Giây</div></div>
         </div>
-        <button className="super-sale-btn" onClick={() => onPageChange && onPageChange("products")}>Buy Now</button>
+        <button className="super-sale-btn" onClick={() => onPageChange && onPageChange("products")}>Mua ngay</button>
       </div>
     </div>
   );

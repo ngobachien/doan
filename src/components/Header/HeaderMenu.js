@@ -65,13 +65,13 @@ function HeaderMenu({ currentPage, onPageChange, openDropdown, setOpenDropdown, 
   };
   const menuItems = [
     { key: 'home', label: 'TRANG CHỦ' },
-    { key: 'about', label: 'ABOUT US' },
+    { key: 'about', label: 'VỀ CHÚNG TÔI' },
     { key: 'products', label: 'SẢN PHẨM', dropdown: [
-      { key: 'product1', label: 'All products' },
-      { key: 'product2', label: 'Billiard cue' },
-      { key: 'product3', label: 'Jumping stick' },
-      { key: 'product4', label: 'Wrecking stick' },
-      { key: 'product5', label: 'Accessories included' },
+      { key: 'product1', label: 'Tất cả sản phẩm' },
+      { key: 'product2', label: 'Cơ Bi-a' },
+      { key: 'product3', label: 'Gậy nhảy' },
+      { key: 'product4', label: 'Gậy phá' },
+      { key: 'product5', label: 'Phụ kiện đi kèm' },
     ] },
     { key: 'brands', label: 'THƯƠNG HIỆU', dropdown: [
       { key: 'brand1', label: 'Cuetec' },
@@ -81,8 +81,8 @@ function HeaderMenu({ currentPage, onPageChange, openDropdown, setOpenDropdown, 
     { key: 'news', label: 'TIN TỨC' },
     { key: 'posts', label: 'BÀI VIẾT' },
     { key: 'promotions', label: 'KHUYẾN MÃI', dropdown: [
-      { key: 'promo1', label: 'Summer Sale' },
-      { key: 'promo2', label: 'Black Friday' },
+      { key: 'promo1', label: 'Giảm giá mùa hè' },
+      { key: 'promo2', label: 'Thứ sáu đen' },
     ] },
     { key: 'contact', label: 'LIÊN HỆ' },
   ];

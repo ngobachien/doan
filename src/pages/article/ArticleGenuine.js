@@ -11,8 +11,8 @@ const ArticleGenuine = () => (
       />
     </div>
     <div className="articlegenuine-content">
-      <h2 className="articlegenuine-title">Tips to help you distinguish genuine billiard cues</h2>
-      <button className="articlegenuine-btn">SEE MORE</button>
+      <h2 className="articlegenuine-title">Mẹo giúp bạn phân biệt cơ bida thật giả</h2>
+      <button className="articlegenuine-btn">XEM THÊM</button>
     </div>
   </section>
 );

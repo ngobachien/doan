@@ -72,30 +72,29 @@ const Chie = () => {
   return (
     <div>
       <div className="chie-banner">
-        <h1 className="chie-banner-title">JUMPING STICK</h1>
+        <h1 className="chie-banner-title">Gậy nhảy</h1>
       </div>
       <div className="chie-toolbar">
         <div className="chie-filter">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
             <path d="M3 5h18M6 12h12M10 19h4" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
           </svg>
-          <span>Filter</span>
         </div>
         <div className="chie-toolbar-right">
-          <span className="chie-sort-label">Sort by:</span>
+          <span className="chie-sort-label">Lọc:</span>
           <select className="chie-sort-select">
-            <option>Best Seller</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option>Bán chạy nhất</option>
+            <option>Giá: Cao đến thấp</option>
+            <option>Giá: Thấp đến cao</option>
           </select>
-          <span className="chie-count">{products.length} products</span>
+          <span className="chie-count">{products.length} Các sản phẩm</span>
         </div>
       </div>
       <div className="chie-grid">
         {currentProducts.map((product, index) => (
           <div className="chie-card" key={product.id}>
             <div className="chie-img-wrap">
-              {product.discount && <span className="chie-discount">Discount</span>}
+              {product.discount && <span className="chie-discount">Giảm giá</span>}
               <img src={product.image} alt={product.name} className="chie-img" />
             </div>
             <div className="chie-name">{product.name}</div>
@@ -104,7 +103,7 @@ const Chie = () => {
               <span className="chie-price">{product.price.toLocaleString('vi-VN')} VND</span>
             </div>
             <button className="chie-btn">
-              {product.options ? 'Select options' : 'Add to cart'}
+              {product.options ? 'Chọn tùy chọn': 'Thêm vào giỏ hàng'}
             </button>
           </div>
         ))}

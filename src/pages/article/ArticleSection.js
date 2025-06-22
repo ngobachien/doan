@@ -5,7 +5,7 @@ const ArticleSection = () => (
   <section className="article-section-banner">
     <div className="article-section-bg" />
     <h1 className="article-section-title">
-      Every Cue Player Has His Own Story -<br />Create Yours With Billiardss.pro
+      Mỗi người chơi cơ đều có câu chuyện riêng của mình -<br />Tạo câu chuyện của riêng bạn với Billiardss.pro
     </h1>
   </section>
 );

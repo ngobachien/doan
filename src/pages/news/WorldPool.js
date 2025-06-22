@@ -4,11 +4,11 @@ import "./WorldPool.css";
 const WorldPool = () => (
   <section className="worldpool-section">
     <div className="worldpool-content">
-      <h2 className="worldpool-title">WORLD POOL</h2>
+      <h2 className="worldpool-title">THẾ GIỚI BI-a</h2>
       <p className="worldpool-desc">
-        Million Dollar Battle - Who will conquer the throne at the World Pool Championship 2025!
+        Trận chiến triệu đô - Ai sẽ chinh phục ngai vàng tại Giải vô địch bi-a thế giới 2025!
       </p>
-      <button className="worldpool-btn">SEE MORE</button>
+      <button className="worldpool-btn">XEM THÊM</button>
     </div>
     <div className="worldpool-img-wrap">
       <img

@@ -6,9 +6,9 @@ function PeriCuePage() {
     <div className="peri-cue-page">
       <div className="content">
         <h1>Peri</h1>
-        <h2>Peri Cue - The Pinnacle of Technology, Creating the Perfect Shot</h2>
+        <h2>Peri Cue - Đỉnh cao của công nghệ, tạo nên cú đánh hoàn hảo</h2>
         <p>
-          Born in the 1990s, Peri billiard cues quickly established themselves as the world's leading cue thanks to their advanced technology, high-quality materials such as precious wood combined with carbon fiber and luxurious design. Trusted by professional players such as Shane Van Boening, Ko Pin Yi, Peri not only helps to control the ball accurately but is also a symbol of class - the perfect choice to improve your skills and master the billiard table.
+          Ra đời vào những năm 1990, cơ bida Peri nhanh chóng khẳng định vị thế là cơ bida hàng đầu thế giới nhờ công nghệ tiên tiến, vật liệu cao cấp như gỗ quý kết hợp với sợi carbon và thiết kế sang trọng. Được các cơ thủ chuyên nghiệp như Shane Van Boening, Ko Pin Yi tin dùng, Peri không chỉ giúp kiểm soát bóng chính xác mà còn là biểu tượng của đẳng cấp - sự lựa chọn hoàn hảo để nâng cao kỹ năng và làm chủ bàn bida.
         </p>
       </div>
     </div>

@@ -6,12 +6,12 @@ const Now = ({ onPageChange }) => {
     <section className="hero-evo-section">
       <div className="hero-evo-bg">
         <div className="hero-evo-content">
-          <h1>Rhino Evo Racing</h1>
+          <h1>Đua xe tê giác Evo</h1>
           <p>
-            Inspired by the thrill of the racetrack, Evo Racing captures the power and speed of high-performance cars. Its sleek design ignites competitive spirit, elevating every match to new heights of excitement.
+            Lấy cảm hứng từ sự phấn khích của đường đua, Evo Racing nắm bắt sức mạnh và tốc độ của những chiếc xe hiệu suất cao. Thiết kế bóng bẩy của nó khơi dậy tinh thần cạnh tranh, đưa mọi trận đấu lên tầm cao mới của sự phấn khích.
           </p>
           <button onClick={() => onPageChange && onPageChange("products")}>
-            Buy Now
+            Mua ngay
           </button>
         </div>
         <div className="hero-evo-flag"></div>

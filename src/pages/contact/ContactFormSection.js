@@ -23,7 +23,7 @@ const ContactFormSection = () => {
 
   return (
     <section className="contactform-section">
-      <h2 className="contactform-title">CONTACT</h2>
+      <h2 className="contactform-title">LIÊN HỆ </h2>
       <div className="contactform-row">
         <div className="contactform-info">
           {info.map((item, i) => (
@@ -72,7 +72,7 @@ const ContactFormSection = () => {
             required
           />
           <button className="contactform-submit" type="submit">
-            <span className="contactform-submit-icon">➤</span> SUBMIT
+            <span className="contactform-submit-icon">➤</span>NỘP
           </button>
         </form>
       </div>

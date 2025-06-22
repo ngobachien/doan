@@ -25,7 +25,7 @@ const Value = () => {
   return (
     <section className="value-section">
       <div className="value-top">
-        <h2 className="value-title">VALUE BRING</h2>
+        <h2 className="value-title">GIÁ TRỊ MANG LẠI</h2>
         <div className="value-content-row">
           <div className="value-accordion">
             {items.map((item, idx) => (
@@ -62,7 +62,7 @@ const Value = () => {
           className="value-bottom-img"
         />
         <div className="value-bottom-text">
-          Come to us - Billiardss.pro to discover a world of Billiards of the new generation full of passion and style.
+          Hãy đến với chúng tôi - Billiardss.pro để khám phá thế giới bida thế hệ mới đầy đam mê và phong cách.
         </div>
       </div>
     </section>

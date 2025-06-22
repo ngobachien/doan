@@ -6,10 +6,10 @@ const NewsSection = () => (
     <div className="news-section-bg" />
     <div className="news-section-content">
       <h1 className="news-section-title">
-        Billiards story every<br />day, did you know?
+        Câu chuyện bi-a mỗi<br />ngày, bạn có biết không?
       </h1>
       <p className="news-section-desc">
-        This is where Billiardss.pro shares exciting tournaments, talented players, and unforgettable moments in billiards. Follow us so you don't miss anything interesting!
+        Đây là nơi Billiardss.pro chia sẻ các giải đấu hấp dẫn, những người chơi tài năng và những khoảnh khắc khó quên trong môn bi-a. Hãy theo dõi chúng tôi để bạn không bỏ lỡ bất kỳ điều gì thú vị!
       </p>
     </div>
   </section>
